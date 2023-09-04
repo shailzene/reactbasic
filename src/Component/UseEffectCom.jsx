@@ -9,10 +9,11 @@ export default function UseEffectCom() {
         }, 1000);
     });
     useEffect(() => {
-          setCount2((count2) => count2 + 5);
-      },[]);
+        setCount2((count2) => count2 + 5);
+    }, []);
     return (
         <>
+            <h1 style={{ color: "red" }}>Use Effect Page</h1>
             <h2>{count}</h2>
             <h2>{count2}</h2>
         </>
